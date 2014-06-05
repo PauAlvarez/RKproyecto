@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  NombreProvider: MyString
+  direccionProvider: MyString
+  fechadasoProvider: MyString
+
+two:
+  NombreProvider: MyString
+  direccionProvider: MyString
+  fechadasoProvider: MyString
