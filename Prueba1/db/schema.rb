@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140606053745) do
+ActiveRecord::Schema.define(version: 20140606061703) do
+
+  create_table "books", force: true do |t|
+    t.string   "isbn"
+    t.string   "claveinterna"
+    t.string   "titulo"
+    t.string   "autor"
+    t.string   "editorial"
+    t.integer  "provider_id"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "books", ["category_id"], name: "index_books_on_category_id"
+  add_index "books", ["provider_id"], name: "index_books_on_provider_id"
+
+  create_table "categories", force: true do |t|
+    t.string   "NombreCategoria"
+    t.string   "descripcionCategoria"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clients", force: true do |t|
     t.string   "nombreClient"

@@ -1,4 +1,8 @@
 Prueba1::Application.routes.draw do
+  resources :books
+
+  resources :categories
+
   resources :promotions
 
   resources :fees
