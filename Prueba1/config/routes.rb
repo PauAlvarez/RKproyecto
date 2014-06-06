@@ -1,4 +1,6 @@
 Prueba1::Application.routes.draw do
+  resources :promotions
+
   resources :fees
 
   resources :providers
