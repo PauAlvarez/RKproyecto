@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidaddinero: MyString
+  fechaestablecida: MyString
+  user_id: 
+
+two:
+  cantidaddinero: MyString
+  fechaestablecida: MyString
+  user_id: 
