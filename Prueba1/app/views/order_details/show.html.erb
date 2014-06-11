@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @order_detail.cantidad %>
+</p>
+
+<p>
+  <strong>Importe:</strong>
+  <%= @order_detail.importe %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @order_detail.descuento %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @order_detail.order %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @order_detail.book %>
+</p>
+
+<%= link_to 'Edit', edit_order_detail_path(@order_detail) %> |
+<%= link_to 'Back', order_details_path %>

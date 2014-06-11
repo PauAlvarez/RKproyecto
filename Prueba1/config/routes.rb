@@ -1,4 +1,8 @@
 Prueba1::Application.routes.draw do
+  resources :order_details
+
+  resources :orders
+
   resources :books
 
   resources :categories
