@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechaventa: 2014-06-11
+  total: MyString
+  user_id: 
+  client_id: 
+
+two:
+  fechaventa: 2014-06-11
+  total: MyString
+  user_id: 
+  client_id: 

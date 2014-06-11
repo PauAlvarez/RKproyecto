@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidad: MyString
+  importe: MyString
+  descuento: MyString
+  sale_id: 
+  book_id: 
+
+two:
+  cantidad: MyString
+  importe: MyString
+  descuento: MyString
+  sale_id: 
+  book_id: 

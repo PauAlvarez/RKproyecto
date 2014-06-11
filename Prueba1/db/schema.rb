@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140606061703) do
+ActiveRecord::Schema.define(version: 20140611192558) do
 
   create_table "books", force: true do |t|
     t.string   "isbn"
@@ -79,6 +79,31 @@ ActiveRecord::Schema.define(version: 20140606061703) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sale_details", force: true do |t|
+    t.string   "cantidad"
+    t.string   "importe"
+    t.string   "descuento"
+    t.integer  "sale_id"
+    t.integer  "book_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sale_details", ["book_id"], name: "index_sale_details_on_book_id"
+  add_index "sale_details", ["sale_id"], name: "index_sale_details_on_sale_id"
+
+  create_table "sales", force: true do |t|
+    t.date     "fechaventa"
+    t.string   "total"
+    t.integer  "user_id"
+    t.integer  "client_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sales", ["client_id"], name: "index_sales_on_client_id"
+  add_index "sales", ["user_id"], name: "index_sales_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "nombreUser"
